@@ -4,6 +4,7 @@ import {Physics} from '@react-three/cannon';
 import {Ground} from './Components/Ground/Ground.jsx';
 import { FPV } from './Components/FPV/index.jsx';
 import { Player } from './Components/Player/index.jsx';
+import { Cubes } from './Components/Cubes/index.jsx';
  
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Sky sunPosition={[300,100,20]} />
         <ambientLight intensity={0.5}  />
         <Physics >
+          <Cubes/>
           <Ground/>
           <Player/>
           <FPV/>
