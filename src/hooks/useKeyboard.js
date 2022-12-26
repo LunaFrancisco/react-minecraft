@@ -38,6 +38,7 @@ export const useKeybooard = () => {
         const handleKeyDown = (e) => {
             const { code } = e
             const action = ACTIONS_KEYBOARD_MAP[code]
+            // console.log(code);
             if(action){
                 setActions((prevActions) => ({
                     ...prevActions,
